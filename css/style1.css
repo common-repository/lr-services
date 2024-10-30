@@ -1,0 +1,63 @@
+.serviceBox{ text-align: center; }
+.serviceBox .service-icon{
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    margin-bottom: 22px;
+    font-size: 35px;
+    color: #ffa900;
+    position: relative;
+}
+.serviceBox .service-icon:before{
+    content: "";
+    width: 120px;
+    height: 120px;
+    border: 1px solid #e8e8e8;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.25s ease 0s;
+}
+.serviceBox:hover .service-icon:before{
+    width: 93px;
+    height: 93px;
+    border: 3px solid #ffa900;
+    top: 13px;
+    left: 13px;
+    transform: rotate(45deg);
+}
+.serviceBox .title{
+    display: block;
+    font-size: 22px;
+    font-weight: 700;
+    color: #0d3b66;
+    margin: 0 0 15px 0;
+    transition: all 0.25s ease 0s;
+}
+.serviceBox:hover .title{
+    color: #ffa900;
+}
+.serviceBox .description{
+    font-size: 14px;
+    color: #888;
+    line-height: 25px;
+}
+.serviceBox .read-more{
+    display: inline-block;
+    padding: 8px 22px;
+    background: #ffa900;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    text-transform: capitalize;
+    border-radius: 9px;
+	margin-top: 10px;
+}
+.serviceBox:hover .read-more{
+    background: #ffa900;
+}
+@media only screen and (max-width: 990px){
+    .serviceBox{ margin-bottom: 30px; }
+}
